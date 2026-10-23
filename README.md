@@ -1,1 +1,1 @@
-# Introducci-n-a-la-informatica-
+# Introduccion-a-la-informática
