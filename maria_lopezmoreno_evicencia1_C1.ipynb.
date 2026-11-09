@@ -1,0 +1,732 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOS5bht1WuQG1XOqlJ1eS1A",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/marialo20030-code/Introducci-n-a-la-informatica-/blob/main/maria_lopezmoreno_evicencia1_C1.ipynb.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#ENTREGA 1\n"
+      ],
+      "metadata": {
+        "id": "yp32ZxfJmRok"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Nueva sección"
+      ],
+      "metadata": {
+        "id": "ucUpK7ijFfVC"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##EJERCICIO 3:  Declaración de variables\n",
+        "\n",
+        "En la ventana de código de abajo hallará un programa pequeño que permite saber si una variable es entero o no. Debajo de el comentario que dice \"Su código va acá abajo\" declare una variable llamada entero y verifique si es un int con ayuda del programa. Como reto intente copiar este programa en la entrada de abajo pero modifíquelo para que seaun float.\n"
+      ],
+      "metadata": {
+        "id": "lAm0JEc6mUaN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "l30zNEG1Rs1j",
+        "outputId": "7b9bf8e4-546d-4cff-d891-dcf163feb94a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "#en este programa primero compruebo si el numero es entero usando el type y el booleano\n",
+        "#comprobación con un numero entero\n",
+        "entero = 5\n",
+        "\n",
+        "#La parte de abajo (quite las comillas)\n",
+        "\n",
+        "if type(entero) == int:\n",
+        "  print(\"el valor de el entero es \"+ str(entero))\n",
+        "else :\n",
+        "  print(\"su entero no es un entero\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "el valor de el entero es 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Su código va acá abajo\n",
+        "#agrego aqui la comprobación con un número no entero\n",
+        "entero = 5.7\n",
+        "\n",
+        "#La parte de abajo (quite las comillas)\n",
+        "\n",
+        "if type(entero) == int:\n",
+        "  print(\"el valor de el entero es \"+ str(entero))\n",
+        "else :\n",
+        "  print(\"su 'entero' no es un entero\")\n",
+        "  #agrego las comillas a entero porque si no es entero, no puedo decir que mi entero sea entero"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OueiyfmQmtYy",
+        "outputId": "681d9b10-4b60-4da9-8e51-6e94201bd080"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "su 'entero' no es un entero\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Aquí modifico el programa para comprobar si el número es un float\n",
+        "#ingreso un float\n",
+        "numero = 6.9\n",
+        "\n",
+        "#La parte de abajo (quite las comillas)\n",
+        "\n",
+        "if type(numero) == float:\n",
+        "  print(\"el valor del float es \"+ str(numero))\n",
+        "else :\n",
+        "  print(\"su numero no es un float\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ldeJa1ZumN5f",
+        "outputId": "de712327-5c82-4939-8ad3-43f0f5775dc4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "el valor del float es 6.9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Su código va acá abajo\n",
+        "#ingreso un entero\n",
+        "numero = 6\n",
+        "\n",
+        "#La parte de abajo (quite las comillas)\n",
+        "\n",
+        "if type(numero) == float:\n",
+        "  print(\"el valor del float es \"+ str(numero))\n",
+        "else :\n",
+        "  print(\"su numero no es un float\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fK8QLIplnhYd",
+        "outputId": "f9e61b6b-6f0c-4e39-f65d-1a3b11928636"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "su numero no es un float\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "#ingreso un complejo\n",
+        "numero = 6 + 7j\n",
+        "\n",
+        "#La parte de abajo (quite las comillas)\n",
+        "\n",
+        "if type(numero) == float:\n",
+        "  print(\"el valor del float es \"+ str(numero))\n",
+        "else :\n",
+        "  print(\"su numero no es un float\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SXdk4t3vnkx5",
+        "outputId": "aaeef8e6-fd88-40c0-ca8d-eaaf6612ea4a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "su numero no es un float\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##EJERCICIOS OPERADORES\n"
+      ],
+      "metadata": {
+        "id": "rVOuhnfnoZ7b"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###EJERCICIO 1:\n",
+        "Utilizando operadores determinar si un número es par o impar.\n"
+      ],
+      "metadata": {
+        "id": "2OHHobiUoc5y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#comprobar si un numero es par o impar, este programa lo hago usando los operadores relacionales,\n",
+        "#los operadores comparan si la var1 que es 0, es igual o no al modulo de la división, si el modulo es 0, el numero es par, si el modulo es diferente de 0 el numero es impar\n",
+        "\n",
+        "numero= 129349359\n",
+        "var = numero%2\n",
+        "var1 = 0\n",
+        "print(\"es numero par? \",var1 == var)\n",
+        "print(\"es numero impar? \",var1 != var)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tGyRu4SdppF9",
+        "outputId": "4ce7e644-2ab7-4288-e961-1ef7b95a3a33"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "es numero par?  False\n",
+            "es numero impar?  True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#otra opcion es hacerlo con un if\n",
+        "numero= 12934\n",
+        "if numero%2==0:\n",
+        "  print(\"es numero par\")\n",
+        "else:\n",
+        "  print(\"es numero impar\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e9puMXJTgkJw",
+        "outputId": "8f11dbb5-64ed-4b0d-c3f6-9aab726f312b"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "es numero par\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###Ejercicio 2\n",
+        "Las raíces de un polinomio de grado 2, de la forma  ax2+bx+c , son 2 números que pueden ser reales o complejos. Utilizando operadores determine si las raíces son reales o complejas para distintos valores de a, b y c."
+      ],
+      "metadata": {
+        "id": "zacAQesQonZ1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#determinar si las raices de un polinomio son complejas, radicando = raiz(b**2 - 4*a*c )\n",
+        "#si (b**2 - 4*a*c )<0 entonces es complejo\n",
+        "a=24\n",
+        "b= 5\n",
+        "c= 1\n",
+        "discriminante= b**2 - 4*a*c\n",
+        "var1 = 0\n",
+        "print(\"es numero complejo? \",var1 > discriminante)\n",
+        "print(\"es numero real? \", var1 < discriminante)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_RAPlq8msdT3",
+        "outputId": "0e744e21-140b-485b-afa6-6ff10ae987f3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "es numero complejo?  True\n",
+            "es numero real?  False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##EJERCICIOS DE STRINGS"
+      ],
+      "metadata": {
+        "id": "hbDKzZuEugS9"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###Ejercicio: Transformación de una Cadena Corrupta\n",
+        "Deberás procesar la cadena para:\n",
+        "Invertir el orden de los caracteres del nombre y el apellido.\n",
+        "Separar correctamente el nombre y el apellido.\n",
+        "Extraer la nota\n",
+        "formatear el resultado final en la forma especificada\n",
+        "Muestra la cadena resultante con el formato indicado."
+      ],
+      "metadata": {
+        "id": "w9fF8u9_ukXd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Tu tarea es transformarla en el siguiente formato:\n",
+        "#(Nombre) (Apellido) ha sacado un (Nota) de nota\n",
+        "cadena = \"zeréP nauJ,01\"\n",
+        "print (cadena[-4]+ cadena[-5] + cadena[-6] + cadena[-7]+ cadena[-8] + cadena[-9] + cadena[-10]+ cadena[-11] + cadena[-12]  + cadena[-13] + ' ha sacado un '+ cadena[-1]+cadena[-2]+ ' de nota')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "piyp5dvLw75Q",
+        "outputId": "507d8d57-0be7-4186-b649-31736a470c59"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Juan Pérez ha sacado un 10 de nota\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###Ejercicio: Validación de Nickname\n",
+        "Un nickname debe cumplir con las siguientes reglas:\n",
+        "1. Debe contener entre 6 y 12 caracteres (ambos inclusive).\n",
+        "2. Sólo debe incluir letras minúsculas. No se permiten números, caracteres especiales ni\n",
+        "letras mayúsculas.\n",
+        "Escribe un código que, dado un conjunto de nicknames, verifique si cada uno cumple con los\n",
+        "requisitos establecidos. Para cada nickname, el programa debe imprimir si es válido o inválido,\n",
+        "junto con una breve explicación en caso de no ser válido."
+      ],
+      "metadata": {
+        "id": "HTdKSQjaFunq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#este código muestra con boleanos si la contraseña es valida o invalida. Primero ubico las variables: el nickname y los valores max y min de longitud\n",
+        "#después en cada renglón se ubica si es T o F el referente en el nickname ingresado, finalmente compruebo si la contraseña es valida o no\n",
+        "#si bien la explicación no tiene la mejor redacción, queda bien claro que es lo que falla en la contraseña para que sea invalida en cada caso\n",
+        "nickname= \"toolongnickname\"\n",
+        "maximo=12\n",
+        "minimo=6\n",
+        "\n",
+        "print('su contraseña solo incluye minusculas', nickname.islower())\n",
+        "print('su contraseña es alfabética',nickname.isalpha())\n",
+        "print ('su contraseña es demasiado larga', len(nickname)>maximo)\n",
+        "print ('su contraseña es demasiado corta', len(nickname)<minimo)\n",
+        "print('su contraseña es válida', len(nickname)>=minimo and len(nickname)<=maximo and nickname.islower() and nickname.isalpha())\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a2vsg1psHXIA",
+        "outputId": "4eda7cfd-5d99-4213-b636-5948e3a99874"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "su contraseña solo incluye minusculas True\n",
+            "su contraseña es alfabética True\n",
+            "su contraseña es demasiado larga True\n",
+            "su contraseña es demasiado corta False\n",
+            "su contraseña es válida False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#incluyo una versión usando bucles de if, en la que primero compruebo si la\n",
+        "#la contraseña es válida usando boleanos y operadores y después para ubicar la\n",
+        "#explicación de porque es válida o no también uso : si la contraseña es\n",
+        "#demasiado larga entonces lo ubica, si tiene menos de el mínimo, también lo ubica\n",
+        "#si incluye numeros lo lee con la negación de que solo tenga letras y hace lo mismo\n",
+        "#con si inluye mayusculas, y lo imprime.\n",
+        "\n",
+        "nickname= \"player_01\"\n",
+        "nickname.islower()\n",
+        "nickname.isalnum()\n",
+        "len(nickname)\n",
+        "maximo=12\n",
+        "minimo=6\n",
+        "\n",
+        "\n",
+        "if len(nickname)>=minimo and len(nickname)<=maximo and nickname.islower() and nickname.isalpha():\n",
+        "  print('su contraseña es válida')\n",
+        "else:\n",
+        "  print('su contraseña no es válida')\n",
+        "\n",
+        "if len(nickname)>maximo:\n",
+        "  print('su contraseña es demasiado larga')\n",
+        "\n",
+        "if len(nickname)<minimo:\n",
+        "  print('su contraseña es demasiado corta')\n",
+        "if not nickname.isalpha():\n",
+        "  print('su contraseña incluye numeros')\n",
+        "\n",
+        "if not nickname.islower():\n",
+        "  print('su contraseña incluye mayusculas')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LDE2P_JiKZuE",
+        "outputId": "0b64494c-171d-49b1-c576-8ed500e916c6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "su contraseña no es válida\n",
+            "su contraseña incluye numeros\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##EJERCICIOS LISTAS"
+      ],
+      "metadata": {
+        "id": "HV9uPnhZNkR6"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###Ejercicio: Impresión de la mitad de una lista\n",
+        "En la siguiente celda se crean varias listas de diferentes longitudes. Si la lista es de longitud\n",
+        "impar, imprima el elemento almacenado en la mitad de la lista, en caso contrario, imprima los\n",
+        "dos elementos que se hallan en la mitad.\n",
+        "lista1 =list('paranguacutirimicuaro')\\\n",
+        "lista2 =list('1234567890')\\\n",
+        "lista3 =list('abcdefghijklmnopqrstvxyz')\\\n",
+        "lista4 =[i for i in range(0,999,2)]\n"
+      ],
+      "metadata": {
+        "id": "YF5i7nrhNpOP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "lista1 =list('paranguacutirimicuaro')\n",
+        "lista2 =list('1234567890')\n",
+        "lista3 =list('abcdefghijklmnopqrstvxyz')\n",
+        "lista4 =[i for i in range(0,999,2)]\n",
+        "medida1= len(lista1)\n",
+        "medida2= len(lista2)\n",
+        "medida3= len(lista3)\n",
+        "medida4= len(lista4)\n",
+        "\n",
+        "if medida1%2!=0:\n",
+        "  print(' la lista1 es impar')\n",
+        " else :\n",
+        "  print ('la lista1 es par')\n",
+        "  print(' los elementos que hay en la mitad son' + lista1[int(medida1/2)]+ lista1[int((medida1/2)+1)] )\n",
+        "if medida2%2!=0:\n",
+        "  print('la lista2 es impar')\n",
+        "  print('el elemento de en medio es ' + lista2[int(medida1/2)])\n",
+        "else :\n",
+        "  print ('la lista2 es par')\n",
+        "  \n",
+        "if medida3%2!=0:\n",
+        "  print('la lista3 es impar')\n",
+        "  print('el elemento de en medio es ' + lista3[int(medida1/2)])\n",
+        "else :\n",
+        "  print ('la lista3 es par')\n",
+        "if medida4%2!=0:\n",
+        "  print('la lista4 es impar')\n",
+        "  print('el elemento de en medio es ' + lista4[int(medida1/2)])\n",
+        "else :\n",
+        "  print ('la lista4 es par')\n",
+        "\n",
+        "\n",
+        "  "
+      ],
+      "metadata": {
+        "id": "qFHRW4fCOL4m"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "LBg6_5dFSeTe"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###Ejercicio: Ordenación de listas\n",
+        "En un colegio personalizado del país, se tienen salones constituidos por 5 estudiantes. La lista\n",
+        "de estudiantes de uno de ellos es:\n",
+        "kinderA_lista = ['Gómez, Sebastián', 'Arango, Natalia', 'Zambrano, Javier', 'Domingo, Carolina']\n",
+        "Organice dicha lista en orden alfabético, guardándola en la misma variable e imprímala en\n",
+        "pantalla"
+      ],
+      "metadata": {
+        "id": "fdFIm1uZSw-B"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "kinderA_lista = ['Gómez, Sebastián', 'Arango, Natalia', 'Zambrano, Javier', 'Domingo, Carolina']\n",
+        "kinderA_lista.sort()\n",
+        "print(kinderA_lista)\n",
+        "#"
+      ],
+      "metadata": {
+        "id": "7AyY5jGXS6d2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b21dcc4f-0e78-40e7-a438-8bb82cf848c8"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Arango, Natalia', 'Domingo, Carolina', 'Gómez, Sebastián', 'Zambrano, Javier']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Ejercicios Diccionarios"
+      ],
+      "metadata": {
+        "id": "fXwUatD_U3UR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Ejercicio: Método get()\n",
+        "Las siguientes líneas de código construyen un histograma de una variable s a partir de la\n",
+        "creacción de un histograma:\n",
+        "def histograma(s):\n",
+        "d = dict()\n",
+        "for c in s:\n",
+        "if c not in d:\n",
+        "d[c] = 1\n",
+        "else:\n",
+        "d[c] += 1\n",
+        "return d\n",
+        "Supongamos que usamos la función anterior para crear un histograma de los caracteres de\n",
+        "alguna palabra u oración:\n",
+        "palabra = 'electroencefalografista'\n",
+        "h=histograma(palabra)\n",
+        "Por otra parte, el método get() de un diccionario recibe dos argumentos: clave1 y valor1 . Sila clave está dentro del diccionario, devuelve el valor asociado a clave dentro del dicciorio, sino,\n",
+        "devuelve valor1. Use éste método para eliminar el condicional de la función histogram"
+      ],
+      "metadata": {
+        "id": "6k7SyO5jU-Nl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "def histograma(s):\n",
+        "  d = dict()\n",
+        "  for c in s:\n",
+        "    d[c] = 1+d.get(c,0)\n",
+        "  return d\n",
+        "\n",
+        "palabra = 'electroencefalografista'\n",
+        "h = histograma(palabra)\n",
+        "h"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UyReM0c-Yjs5",
+        "outputId": "d86ee974-1ea3-404d-e1e1-76bc4eae849d"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'e': 4,\n",
+              " 'l': 2,\n",
+              " 'c': 2,\n",
+              " 't': 2,\n",
+              " 'r': 2,\n",
+              " 'o': 2,\n",
+              " 'n': 1,\n",
+              " 'f': 2,\n",
+              " 'a': 3,\n",
+              " 'g': 1,\n",
+              " 'i': 1,\n",
+              " 's': 1}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Ejercicio: Claves e ítems comunes\n",
+        "Suponga que tiene los siguients dos diccionarios:\n",
+        "a = {'x' : 1, 'y' : 2, 'z' : 3}\n",
+        "b = {'w' : 10, 'x' : 11,'y' : 2}\n",
+        "Encuentre las claves e ítems comunes de ambos diccionarios."
+      ],
+      "metadata": {
+        "id": "58pTK-7dZNlt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = {'x' : 1, 'y' : 2, 'z' : 3}\n",
+        "b = {'w' : 10, 'x' : 11,'y' : 2}\n",
+        "print(\"Claves en común\", a.keys()&b.keys())\n",
+        "print(\" items en común\", a.items()&b.items())\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OBEpTRtZZjZf",
+        "outputId": "beb9d4f8-597b-4e54-b2d1-c28a73e7d1c3"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Claves en común {'y', 'x'}\n",
+            " items en común {('y', 2)}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
