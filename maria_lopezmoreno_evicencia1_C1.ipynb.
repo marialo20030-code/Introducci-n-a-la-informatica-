@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOS5bht1WuQG1XOqlJ1eS1A",
+      "authorship_tag": "ABX9TyP+FdqEORKGvMhbRA6Y6T5L",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -561,13 +561,6 @@
     },
     {
       "cell_type": "markdown",
-      "source": [],
-      "metadata": {
-        "id": "LBg6_5dFSeTe"
-      }
-    },
-    {
-      "cell_type": "markdown",
       "source": [
         "###Ejercicio: Ordenación de listas\n",
         "En un colegio personalizado del país, se tienen salones constituidos por 5 estudiantes. La lista\n",
@@ -583,10 +576,11 @@
     {
       "cell_type": "code",
       "source": [
+        "#uso el sort para ordenar la lista\n",
+        "\n",
         "kinderA_lista = ['Gómez, Sebastián', 'Arango, Natalia', 'Zambrano, Javier', 'Domingo, Carolina']\n",
         "kinderA_lista.sort()\n",
-        "print(kinderA_lista)\n",
-        "#"
+        "print(kinderA_lista)\n"
       ],
       "metadata": {
         "id": "7AyY5jGXS6d2",
@@ -703,6 +697,7 @@
     {
       "cell_type": "code",
       "source": [
+        "#usando los operadores puedo comparar y obtener los elemntos y las claves en comun.\n",
         "a = {'x' : 1, 'y' : 2, 'z' : 3}\n",
         "b = {'w' : 10, 'x' : 11,'y' : 2}\n",
         "print(\"Claves en común\", a.keys()&b.keys())\n",
